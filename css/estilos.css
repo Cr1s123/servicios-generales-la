@@ -522,4 +522,70 @@ button {
         padding: 25px;
     }
 
+
+
+
+
+}
+
+
+
+/* LOGOTIPO DE LA EMPRESA */
+.logo-imagen {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* GALERÍA DE TRABAJOS */
+.galeria-trabajos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.trabajo-card {
+    background: #202020;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.trabajo-card:hover {
+    transform: translateY(-6px);
+}
+
+.trabajo-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.trabajo-info {
+    padding: 22px;
+}
+
+.trabajo-info h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.trabajo-info p {
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .galeria-trabajos {
+        grid-template-columns: 1fr;
+    }
+
+    .trabajo-card img {
+        height: 230px;
+    }
 }
